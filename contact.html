@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Coffee House</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+    <img src="logo.png" alt="Coffee House Logo">
+    <span>Coffee House</span>
+</a>
+
+    <button class="menu-toggle"
+            onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+
+    <nav id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="menu.html">
+            Menu
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="contact.html"
+           class="active">
+
+            Contact
+
+        </a>
+
+    </nav>
+
+
+    <a href="index.html#outlets"
+       class="nav-btn">
+
+        Visit Us
+
+    </a>
+
+</header>
+
+
+
+<!-- =========================
+     CONTACT HERO
+========================= -->
+
+<section class="contact-hero">
+
+    <div class="contact-hero-content">
+
+        <p>
+            COFFEE HOUSE
+        </p>
+
+        <h1>
+            Get In <span>Touch</span>
+        </h1>
+
+        <span>
+            We'd love to hear from you.
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT INFO
+========================= -->
+
+<section class="contact-section">
+
+
+    <div class="contact-title">
+
+        <p>
+            CONTACT US
+        </p>
+
+        <h2>
+            Let's Talk Coffee
+        </h2>
+
+        <span>
+            Visit us, call us or send us a message.
+        </span>
+
+    </div>
+
+
+
+    <!-- CONTACT CARDS -->
+
+    <div class="contact-info-grid">
+
+
+        <!-- EMAIL -->
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                ✉️
+            </div>
+
+            <h3>
+                Email Us
+            </h3>
+
+            <a href="mailto:sakilahammed114@gmail.com">
+                sakilahammed114@gmail.com
+            </a>
+
+        </div>
+
+
+
+        <!-- PHONE -->
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📞
+            </div>
+
+            <h3>
+                Call Us
+            </h3>
+
+            <p>
+                0998877
+            </p>
+
+            <p>
+                0998866
+            </p>
+
+            <p>
+                0998855
+            </p>
+
+        </div>
+
+
+
+        <!-- OPENING HOURS -->
+
+       <div class="contact-card">
+    <div class="contact-icon">🕒</div>
+
+    <h3>Opening Hours</h3>
+
+    <p>Saturday - Tuesday: 10:00 AM - 11:00 PM</p>
+    <p>Wednesday - Friday: 3:00 PM - 10:00 PM</p>
+</div>
+
+    </div>
+
+
+
+    <!-- =========================
+         OUTLETS
+    ========================= -->
+
+    <div class="outlet-contact-section">
+
+        <div class="outlet-contact-title">
+
+            <p>
+                OUR LOCATIONS
+            </p>
+
+            <h2>
+                Visit Our Outlets
+            </h2>
+
+        </div>
+
+
+        <div class="outlet-contact-grid">
+
+
+            <!-- UTTARA -->
+
+            <div class="outlet-contact-card">
+
+                <div class="outlet-number">
+                    01
+                </div>
+
+                <h3>
+                    Uttara
+                </h3>
+
+                <p>
+                    House-15, Road-10B,
+                    Sector-11
+                </p>
+
+                <a href="tel:0998877">
+                    📞 0998877
+                </a>
+
+            </div>
+
+
+
+            <!-- MYMENSINGH -->
+
+            <div class="outlet-contact-card">
+
+                <div class="outlet-number">
+                    02
+                </div>
+
+                <h3>
+                    Mymensingh
+                </h3>
+
+                <p>
+                    Townhall, Mena Market,
+                    Ground Floor
+                </p>
+
+                <a href="tel:0998866">
+                    📞 0998866
+                </a>
+
+            </div>
+
+
+
+            <!-- NETROKONA -->
+
+            <div class="outlet-contact-card">
+
+                <div class="outlet-number">
+                    03
+                </div>
+
+                <h3>
+                    Netrokona
+                </h3>
+
+                <p>
+                    Mukterpara,
+                    Sakil Market
+                </p>
+
+                <a href="tel:0998855">
+                    📞 0998855
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+   <!-- ========================= BOOKING FORM ========================= --> <div class="contact-form-wrapper booking-wrapper"> <div class="contact-form-text"> <p> BOOKING NOW ☕ </p> <h2> Reserve Your Table </h2> <span> Fill in your details and confirm your booking via WhatsApp. </span> </div> <form class="contact-form booking-form" onsubmit="confirmBooking(event)"> <!-- CUSTOMER NAME --> <input type="text" id="customerName" placeholder="Customer Name" required> <!-- PHONE NUMBER --> <input type="tel" id="customerPhone" placeholder="Phone Number" required> <!-- DATE + TIME --> <div class="form-row"> <input type="date" id="bookingDate" required> <input type="time" id="bookingTime" required> </div> <!-- OUTLET --> <select id="bookingOutlet" required> <option value=""> কোন Outlet নির্বাচন করুন </option> <option value="Uttara"> Uttara </option> <option value="Mymensingh"> Mymensingh </option> <option value="Netrokona"> Netrokona </option> </select> <!-- CONFIRM BOOKING --> <button type="submit"> Confirm Booking ☕ → </button> </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ CoffeeHouse
+    </div>
+
+    <p>
+        Fresh Coffee • Good Mood • Beautiful Moments
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="menu.html">
+            Menu
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 Coffee House. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -30,8 +30,8 @@ function orderCoffee(coffeeName, price) {
 
     const message =
         "Assalamu Alaikum, I would like to order:%0A%0A" +
-        "☕ Coffee: " + coffeeName + "%0A" +
-        "💰 Price: ৳" + price + "%0A%0A" +
+        "Coffee: " + coffeeName + "%0A" +
+        "Price: ৳" + price + "%0A%0A" +
         "Please confirm my order.";
 
     const whatsappURL =
@@ -51,7 +51,7 @@ function sendMessage(event) {
     event.preventDefault();
 
     alert(
-        "Thank you! ☕ Your message has been received."
+        "Thank you! Your message has been received."
     );
 
 }

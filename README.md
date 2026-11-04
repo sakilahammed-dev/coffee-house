@@ -1,20 +1,20 @@
-# ☕ Coffee House - Premium Coffee Shop Website
+# Coffee House - Premium Coffee Shop Website
 
 A clean, modern, and responsive website for a premium coffee shop and café.
 
-## ✨ Features
+## Features
 - **Responsive Navigation:** Smooth mobile hamburger menu and quick access buttons.
 - **Hero & Story Section:** Captivating visual intro to Coffee House experience.
 - **Interactive Menu:** Featured coffee selections, espresso, cold brews, and snacks.
 - **Gallery:** Visual showcase of the café ambiance, brewing process, and beans.
 - **Contact & Outlets:** Location details, opening hours, contact form, and newsletter subscription.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **HTML5:** Semantic markup
 - **CSS3:** Custom responsive styling with CSS variables
 - **JavaScript (ES6):** Interactive UI behaviors
 
-## 🚀 Getting Started
+## Getting Started
 To view this project locally:
 1. Clone the repository:
    ```bash
@@ -27,4 +27,4 @@ To view this project locally:
 3. Visit `http://localhost:8085`
 
 ---
-Developed by [Sakil Ahammed](https://github.com/sakilahammed-dev)
+Developed by [Sakil Ahammed](https://github.com/sakilahammed-dev) (*Full-Stack AI & Automation Architect*)
